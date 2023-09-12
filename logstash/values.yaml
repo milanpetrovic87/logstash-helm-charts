@@ -199,8 +199,10 @@ securityContext:
     #drop:
       #- ALL
   # readOnlyRootFilesystem: true
-  runAsNonRoot: true
-  runAsUser: 1000
+  #runAsNonRoot: true
+  runAsUser: 0
+  allowPrivilegeEscalation: false
+  
 
 # How long to wait for logstash to stop gracefully
 terminationGracePeriod: 120
